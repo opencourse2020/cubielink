@@ -38,7 +38,101 @@
 
     <!--== Main Style CSS ==-->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      .glide__track .glide__slide {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
 
+.gx-2 .glide__track .glide__slide {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.glide__bullets {
+  display: inline-block;
+  position: initial;
+  text-align: center;
+  transform: initial;
+  left: initial;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+.glide__bullets .glide__bullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  background: var(--separator);
+  outline: initial !important;
+  border: initial;
+  margin: 0 3px;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: initial;
+}
+.glide__bullets .glide__bullet.glide__bullet:hover, .glide__bullets .glide__bullet.glide__bullet:focus {
+  background: var(--separator);
+  border: initial;
+}
+.glide__bullets .glide__bullet.glide__bullet--active {
+  background: var(--primary) !important;
+}
+
+.glide-thumb .glide__slide,
+.glide-large .glide__slide {
+  cursor: pointer;
+}
+
+.glide-thumb {
+  margin: 0 auto;
+}
+.glide-thumb li {
+  text-align: center;
+  opacity: 0.5;
+  object-fit: cover;
+}
+.glide-thumb li.active, .glide-thumb li:hover {
+  opacity: 1;
+}
+.glide-thumb li img {
+  width: 60px;
+  margin-bottom: 0;
+}
+.glide-thumb .glide__arrows .btn {
+  position: absolute;
+  top: 5px;
+}
+.glide-thumb .glide__arrows .btn.left-arrow {
+  left: -50px;
+}
+.glide-thumb .glide__arrows .btn.right-arrow {
+  right: -50px;
+}
+
+.glide-tab-container {
+  width: calc(100% - 40px);
+}
+
+.glide-tab .glide__arrows .btn {
+  position: absolute;
+  top: 5px;
+}
+.glide-tab .glide__arrows .btn.left-arrow {
+  left: -30px;
+}
+.glide-tab .glide__arrows .btn.right-arrow {
+  right: -30px;
+}
+.glide-tab .glide__slide {
+  padding: 0;
+  text-align: center;
+}
+.glide-tab .glide__slide.active .btn {
+  background-color: var(--foreground);
+  color: var(--primary) !important;
+  box-shadow: inset 0 0 0 1px var(--primary) !important;
+}
+    </style>
     <!--[if lt IE 9]>
     <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
