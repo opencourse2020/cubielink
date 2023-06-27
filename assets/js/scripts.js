@@ -46,6 +46,8 @@ class Scripts {
     if (typeof Scripts !== 'undefined') {
       const scripts = new Scripts();
     }
+    feedb = document.getElementsByClassName('Feedback')
+    feedb.style.display = "none";
   });
 })();
 
