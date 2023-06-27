@@ -2848,10 +2848,17 @@
 <script async src="//www.instagram.com/embed.js"></script>
 
 <script>
-  window.addEventListener('DOMContentLoaded', () => {
+  function hide (elements) {
+  elements = elements.length ? elements : [elements];
+  for (var index = 0; index < elements.length; index++) {
+    elements[index].style.display = 'none';
+  }
+}
 
-    feedb = document.getElementsByClassName('Feedback')
-    feedb.style.display = "none";
+  window.addEventListener('DOMContentLoaded', () => {
+    hide(document.getElementsByClassName('Feedback'));
+    // feedb = document.getElementsByClassName('Feedback');
+    // feedb.style.display = "none";
   });
 </script>
 </body>
