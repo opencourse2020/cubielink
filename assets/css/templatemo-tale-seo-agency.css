@@ -1049,7 +1049,7 @@ Infos Style
 */
 
 .infos {
-  background-image: url(../images/infos-bg.jpg);
+  background-image: url(../assets/images/infos-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1064,7 +1064,7 @@ Infos Style
 }
 
 .infos .main-content .left-image {
-  background-image: url(../images/left-infos.jpg);
+  background-image: url(../assets/images/left-infos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
