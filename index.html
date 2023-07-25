@@ -339,14 +339,36 @@ margin: 0;
 
   <style>
     #videoDiv {width: 100%; height: 360px; position: relative;}
-#video1 { margin: auto; display: block;}
-#videoMessage { position: absolute; top: 0; left: 0;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-width: 100%;
-height: 100%;}
+    #video1 { margin: auto; display: block;}
+    #videoMessage { position: absolute; top: 0; left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;}
+  </style>
+  <style>
+    video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+}
+.video-wrapper {
+  border: 2px solid #000;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   </style>
     <!--[if lt IE 9]>
     <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -1406,51 +1428,61 @@ height: 100%;}
     </section>
 
     <section class="mb-4">
+<!--      <div class="row">-->
+<!--        <div class="col-4 col-md-12">-->
+<!--          <div id="videoDiv">-->
+<!--        <video id="video1" preload="" autoplay="" muted="" playsinline="" loop="">-->
+<!--          <source src="assets/videos/video1.mp4" type="video/mp4">-->
+<!--        </video>-->
+<!--        <div id="videoMessage" class="styling">-->
+<!--          <h1>The Early Bird...</h1>-->
+<!--          <h2>...gets the food.</h2>-->
+<!--          <h3>Don't be late!</h3>-->
+<!--          <p class="videoClick">-->
+<!--            <a href="https://www.instagram.com/Marxlidoll/">Click here and be impressed</a>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--        </div>-->
+<!--        <div class="col-4 col-md-12">-->
+<!--          <div id="videoDiv">-->
+<!--        <video id="video2" preload="" autoplay="" muted="" playsinline="" loop="">-->
+<!--          <source src="assets/videos/video3.mp4" type="video/mp4">-->
+<!--        </video>-->
+<!--        <div id="videoMessage" class="styling">-->
+<!--          <h1>The Early Bird...</h1>-->
+<!--          <h2>...gets the food.</h2>-->
+<!--          <h3>Don't be late!</h3>-->
+<!--          <p class="videoClick">-->
+<!--            <a href="https://www.instagram.com/Marxlidoll/">Click here and be impressed</a>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--        </div>-->
+<!--        <div class="col-4 col-md-12">-->
+<!--          <div id="videoDiv">-->
+<!--        <video id="video3" preload="" autoplay="" muted="" playsinline="" loop="">-->
+<!--          <source src="assets/videos/video6.mp4" type="video/mp4">-->
+<!--        </video>-->
+<!--        <div id="videoMessage" class="styling">-->
+<!--          <h1>The Early Bird...</h1>-->
+<!--          <h2>...gets the food.</h2>-->
+<!--          <h3>Don't be late!</h3>-->
+<!--          <p class="videoClick">-->
+<!--            <a href="https://www.instagram.com/Marxlidoll/">Click here and be impressed</a>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--        </div>-->
+<!--      </div>-->
       <div class="row">
-        <div class="col-4 col-md-12">
-          <div id="videoDiv">
-        <video id="video1" preload="" autoplay="" muted="" playsinline="" loop="">
-          <source src="assets/videos/video1.mp4" type="video/mp4">
-        </video>
-        <div id="videoMessage" class="styling">
-          <h1>The Early Bird...</h1>
-          <h2>...gets the food.</h2>
-          <h3>Don't be late!</h3>
-          <p class="videoClick">
-            <a href="https://www.instagram.com/Marxlidoll/">Click here and be impressed</a>
-          </p>
-        </div>
-      </div>
-        </div>
-        <div class="col-4 col-md-12">
-          <div id="videoDiv">
-        <video id="video2" preload="" autoplay="" muted="" playsinline="" loop="">
-          <source src="assets/videos/video3.mp4" type="video/mp4">
-        </video>
-        <div id="videoMessage" class="styling">
-          <h1>The Early Bird...</h1>
-          <h2>...gets the food.</h2>
-          <h3>Don't be late!</h3>
-          <p class="videoClick">
-            <a href="https://www.instagram.com/Marxlidoll/">Click here and be impressed</a>
-          </p>
-        </div>
-      </div>
-        </div>
-        <div class="col-4 col-md-12">
-          <div id="videoDiv">
-        <video id="video3" preload="" autoplay="" muted="" playsinline="" loop="">
-          <source src="assets/videos/video6.mp4" type="video/mp4">
-        </video>
-        <div id="videoMessage" class="styling">
-          <h1>The Early Bird...</h1>
-          <h2>...gets the food.</h2>
-          <h3>Don't be late!</h3>
-          <p class="videoClick">
-            <a href="https://www.instagram.com/Marxlidoll/">Click here and be impressed</a>
-          </p>
-        </div>
-      </div>
+        <div class="col-6">
+          <div class="video-wrapper">
+            <video playsinline autoplay muted loop poster="cake.jpg">
+              <source src="assets/videos/video1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
       </div>
 
